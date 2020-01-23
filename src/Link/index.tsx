@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 import { svg, select } from 'd3';
 import { Orientation, NodeData, LinkData, PathFunctionOption, PathFunction } from '../types/common';
 import './style.css';
 
-type LinkEventHandler = (source: NodeData, target: NodeData, evt: Event) => void;
+type LinkEventHandler = (source: NodeData, target: NodeData, evt: SyntheticEvent) => void;
 
 type LinkProps = {
   linkData: LinkData;

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 import { select } from 'd3';
 import SvgTextElement from './SvgTextElement';
 import ForeignObjectElement from './ForeignObjectElement';
 import { Orientation, NodeData, FIXME } from '../types/common';
 import './style.css';
 
-type NodeEventHandler = (id: string, evt: Event) => void;
+type NodeEventHandler = (id: string, evt: SyntheticEvent) => void;
 
 type NodeProps = {
   nodeData: NodeData;
